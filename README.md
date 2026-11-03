@@ -26,11 +26,17 @@ ndryshimet.
 ```
 mirembajtje-windows/
 ├── README.md
+├── GUIDE.md
 ├── LICENSE.md
-└── scripts/
-    ├── Mirembajtje_Laptopi.bat   # niveli 1 — më i buti
-    ├── Optimizim_Total.bat       # niveli 2 — mesatar
-    └── Super_Optimizim.bat       # niveli 3 — më agresivi
+├── scripts/
+│   ├── Mirembajtje_Laptopi.bat   # niveli 1 — më i buti
+│   ├── Optimizim_Total.bat       # niveli 2 — mesatar
+│   ├── Super_Optimizim.bat       # niveli 3 — më agresivi
+│   └── pastro-pc.bat             # pastrim mujor SUPER PREMIUM
+└── tools/
+    └── bej-zip-kod/
+        ├── BEJ-ZIP-KOD.bat       # nisësi i mjetit ZIP
+        └── bej-zip-kod.ps1       # ZIP vetëm me kod
 ```
 
 Zgjidh **një** nivel sipas nevojës. Mos i ekzekutoni të tre njëri pas tjetrit
@@ -113,6 +119,29 @@ dhe vetëm pasi të keni kuptuar paralajmërimet më poshtë.
   të bllokohen.
 - Çaktivizimi i `Fax` dhe `MapsBroker` është i sigurt vetëm nëse nuk
   i përdorni ato shërbime.
+
+### 4. pastro-pc.bat — pastrim mujor SUPER PREMIUM
+
+Skript mujor (vetë skripti thotë "1 herë në muaj"), i ndryshëm nga tre
+të parët: bën pastrim TEMP/Prefetch, cache Windows Update, thumbnail
+cache, CBS log-e, Recycle Bin, `DISM /StartComponentCleanup`,
+`defrag C: /O`, 5 tweaks (MenuShowDelay 0, StartupDelay 0,
+VisualFX "Best performance", SysMain disabled, Storage Sense),
+`ipconfig /flushdns` dhe `sfc /verifyonly`.
+**Kujdes:** `sfc /verifyonly` vetëm verifikon, nuk riparon; skanimi
+antivirus në fund është opsional dhe i shpejtë (`ScanType 1`), jo i plotë.
+Dhe ndryshe nga tre të parët, ky skript **nuk e kërkon vetë Adminin**
+— duhet nisur manualisht me Run as administrator, përndryshe ndalon.
+Udhëzuesi i plotë, hap pas hapi: `GUIDE.md`.
+
+### Mjet shtesë: bej-zip-kod — ZIP vetëm me kod
+
+`tools/bej-zip-kod/` përmban `BEJ-ZIP-KOD.bat` + `bej-zip-kod.ps1`
+(të dy bashkë, në dosjen rrënjë të projektit). Bën ZIP vetëm me kodin,
+pa `data/`, `node_modules/`, `dist/`, `.git/`, pa `*.mp4`/`*.pyc`/`*.zip`,
+me dalje në Desktop: `cmimradar-ndryshimet-kod.zip` (emri origjinal
+për ÇmimRadar, i lënë siç ishte). Nëse ZIP-i del mbi 24 MB, skripti
+vetë paralajmëron të mos e ngarkosh. Udhëzuesi i plotë: `GUIDE.md`.
 
 ### Si përdoret
 
@@ -250,6 +279,30 @@ and only after you have understood the warnings below.
   excluded **will be scanned again** and may be blocked.
 - Disabling `Fax` and `MapsBroker` is safe only if you do not use
   those services.
+
+### 4. pastro-pc.bat — monthly SUPER PREMIUM cleaning
+
+Monthly script (the script itself says "once a month"), different from
+the first three: it cleans TEMP/Prefetch, Windows Update cache,
+thumbnail cache, CBS logs, Recycle Bin, `DISM /StartComponentCleanup`,
+`defrag C: /O`, 5 tweaks (MenuShowDelay 0, StartupDelay 0,
+VisualFX "Best performance", SysMain disabled, Storage Sense),
+`ipconfig /flushdns` and `sfc /verifyonly`.
+**Careful:** `sfc /verifyonly` only verifies, it does not repair; the
+antivirus scan at the end is optional and quick (`ScanType 1`), not full.
+And unlike the first three, this script **does not request Admin itself**
+— it must be started manually with Run as administrator, otherwise it stops.
+Full step-by-step guide: `GUIDE.md`.
+
+### Extra tool: bej-zip-kod — ZIP with code only
+
+`tools/bej-zip-kod/` contains `BEJ-ZIP-KOD.bat` + `bej-zip-kod.ps1`
+(both together, in the project root folder). It makes a ZIP with only
+the code, without `data/`, `node_modules/`, `dist/`, `.git/`, without
+`*.mp4`/`*.pyc`/`*.zip`, with output on the Desktop:
+`cmimradar-ndryshimet-kod.zip` (the original name for ÇmimRadar,
+left as it was). If the ZIP comes out over 24 MB, the script itself
+warns not to upload it. Full guide: `GUIDE.md`.
 
 ### How to use
 
