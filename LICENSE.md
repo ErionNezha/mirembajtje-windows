@@ -14,7 +14,7 @@
 
 **Copyright © 2026 MR ERIONXX (Erion Nezha). Të gjitha të drejtat e rezervuara.**
 
-Ky projekt, përfshirë të tre skriptet `.bat`, README-n dhe këtë licencë,
+Ky projekt, përfshirë skriptet `.bat` dhe `.ps1`, README-n, GUIDE-n dhe këtë licencë,
 është krijuar nga MR ERIONXX.
 
 ### Lejohet — falas, pa pagesë
@@ -53,7 +53,7 @@ e të dhënave të tij para ekzekutimit.
 
 **Copyright © 2026 MR ERIONXX (Erion Nezha). All rights reserved.**
 
-This project, including all three `.bat` scripts, the README and this
+This project, including the `.bat` and `.ps1` scripts, the README, the GUIDE and this
 license, was created by MR ERIONXX.
 
 ### Allowed — free of charge
