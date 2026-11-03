@@ -118,7 +118,8 @@ Krahasuar me skedarët origjinalë të autorit, versioni publik ka vetëm
 dy ndryshime të domosdoshme, pa prekur logjikën e skripteve:
 
 - **Super_Optimizim:** u hoq seksioni personal që fshinte një skedar
-  specifik nga dosja `Downloads` e autorit (`C:\Users\erjon\...`).
+  specifik nga dosja `Downloads` e autorit
+  (`C:\Users\<emri-i-përdoruesit>\...`).
   Versioni publik është i përgjithshëm dhe nuk përmban asnjë rrugë
   personale dhe nuk fshin skedarë të përdoruesit.
 - **Optimizim_Total:** u rregullua bug-u i `powercfg` — përdorej
