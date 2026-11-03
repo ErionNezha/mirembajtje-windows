@@ -5,9 +5,9 @@
 [Shqip](#shqip) | [English](#english)
 
 > **Shënim / Note:** Skriptet `.bat` mbeten fiks siç janë lënë — me mesazhet
-> në shqip, pa asnjë ndryshim në komanda. Vetëm ky README është dygjuhësh.
+> në shqip, pa asnjë ndryshim në komanda. README dhe LICENSE janë dygjuhësh.
 > The `.bat` scripts remain exactly as originally written — with messages
-> in Albanian, no change to the commands. Only this README is bilingual.
+> in Albanian, no change to the commands. README and LICENSE are bilingual.
 
 ---
 
